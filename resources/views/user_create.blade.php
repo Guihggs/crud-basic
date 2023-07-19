@@ -15,5 +15,7 @@
     <input type="text" name="password" placeholder="Your password">
     <button type="submit">Create</button>
 </form>
+<a type="button" class="btn btn-dark" href="{{ route('home') }}" >Home Page</a>
+
 
 @endsection
