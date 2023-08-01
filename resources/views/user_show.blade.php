@@ -1,5 +1,6 @@
 @extends('master')
 
+
 @section('content')
 
 <h2>User - {{ $user->firstName }}</h2>
@@ -12,3 +13,4 @@
 
 
 @endsection
+

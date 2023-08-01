@@ -16,7 +16,7 @@
     <input type="text" name="email" value="{{ $user->email }}">
     <button type="submit">Update</button>
 </form>
-<a type="button" class="btn btn-dark" href="{{ route('home') }}" >Home Page</a>
+    <a class="btn btn-dark mg-bt" href="{{ route('users.index') }}" >Show Users</a>
 </div>
 
 

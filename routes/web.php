@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-
 
 
 Route::get('/', [HomeController::class,'index'])->name('home');
@@ -16,3 +16,8 @@ Route::get('/', [HomeController::class,'index'])->name('home');
 //Route::put('/users/{user}', [UserController::class, 'update'])->name('users.update');
 //Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
 Route::resource('users', UserController::class);
+// Rotas de autenticação
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'processLogin']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
