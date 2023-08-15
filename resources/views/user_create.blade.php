@@ -3,7 +3,7 @@
 @section('content')
 
 <h2>Create</h2>
-    <a type="button" class="btn btn-dark" href="{{ route('home') }}" >Home Page</a>
+   
 
 @if (session()->has('message'))
    {{ session()->get('message') }}
@@ -16,5 +16,7 @@
     <input type="text" name="password" placeholder="Your password">
     <button type="submit">Create</button>
 </form>
+
+<a type="button" class="btn btn-dark mt-3" href="{{ route('users.index') }}">Show Users</a>
 
 @endsection

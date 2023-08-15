@@ -19,5 +19,9 @@ Route::resource('users', UserController::class);
 // Rotas de autenticação
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'processLogin']);
-Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+/*Route::middleware(['auth', 'auth.session'])->group(function () {
+    Route::post('/login', [LoginController::class, 'processLogin']);
+});*/
 

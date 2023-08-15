@@ -14,6 +14,7 @@
     <input type="text" name="firstName" value="{{ $user->firstName }}">
     <input type="text" name="lastName" value="{{ $user->lastName }}">
     <input type="text" name="email" value="{{ $user->email }}">
+    <input type="text" name="password" placeholder="New password">
     <button type="submit">Update</button>
 </form>
     <a class="btn btn-dark mg-bt" href="{{ route('users.index') }}" >Show Users</a>

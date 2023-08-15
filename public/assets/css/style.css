@@ -8,10 +8,13 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 16px;
-    background-color: #ABF6F0;
+    background-color: #e9f7f9;
+    display: grid;
+    flex-direction: column;
+    
 
     .column {
-        display: flex;
+        display: grid;
         flex-direction: column;
         margin: 1rem auto;
         box-shadow: 0 3px 7px -1px rgba(#000, .1);

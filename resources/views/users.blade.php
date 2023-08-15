@@ -5,7 +5,7 @@
     </div>
     <div class="d-flex justify-content-around">
         <a href="{{ route('users.create') }}" class="btn btn-primary">Create</a>
-        <a href="{{ route('logout') }}" class="btn btn-dark" method="POST">Logout</a>
+        <a href="{{ route('logout') }}" class="btn btn-dark" method="get">Logout</a>
     </div>
         <hr>
 
