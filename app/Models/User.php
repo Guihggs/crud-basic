@@ -23,6 +23,7 @@ class User extends Authenticatable
         'lastName',
         'email',
         'password',
+        'image_path',
     ];
 
     /**
@@ -35,6 +36,7 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+
     /**
      * The attributes that should be cast.
      *
@@ -45,8 +47,12 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    
+
     public function verifyPassword($password)
     {
         return Hash::check($password, $this->password);
     }
+
+
 }

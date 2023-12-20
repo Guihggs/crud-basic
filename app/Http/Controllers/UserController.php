@@ -40,6 +40,7 @@ class UserController extends Controller
             'lastName' => $request->input('lastName'),
             'email' => $request->input('email'),
             'password' => password_hash($request->input('password'), PASSWORD_DEFAULT),
+            'image_path' => $request->input('image_path'),
         ]);
 
         if ($created) {
